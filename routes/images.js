@@ -42,6 +42,7 @@ async function getScreenshotOfElementFromURL(
   page.setViewport({ width, height })
   await goToURL(page, url)
   const target = await page.waitForSelector(selector)
+  await page.waitFor(1500)
   const bufferPromise = await target.screenshot()
   await browser.close()
   return bufferPromise
