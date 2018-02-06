@@ -1,0 +1,14 @@
+{
+  "name": "express-puppeteer-starter",
+  "scripts": {
+  },
+  "formation": {
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
